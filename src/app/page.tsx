@@ -15,6 +15,8 @@ import ImageGeneratorIntegration from "@/components/elements/integration/image-g
 import ImageGeneratorPricing from "@/components/elements/pricing/image-generator-pricing";
 import ImageGeneratorService from "@/components/elements/service/image-generator-service";
 import ImageGeneratorTestimonial from "@/components/elements/testimonial/image-generator-testimonial";
+import Counter2 from "@/components/elements/counter/counter2";
+import CounterWrapper from "@/components/elements/counter/counterWrapper";
 
 export default function Page() {
   const hero = getMainPage("/heros/image-generator-hero.mdx");
@@ -38,6 +40,7 @@ export default function Page() {
     <main>
       <SeoData />
       <ImageGeneratorHero hero={hero} />
+      <CounterWrapper/>
       <ImageGeneratorFeature feature={feature} />
       <ImageGeneratorService service={service} services={services} />
       <ImageGeneratorIntegration integration={integration} />

@@ -1,9 +1,11 @@
+'use client'
 import Link from "next/link";
 import siteConfig from "@/config/siteConfig.json";
 
 // components
 import Logo from "../common/logo";
 import { socialShare1 } from "@/components/tools/social";
+import { scroller } from "react-scroll";
 
 type Props = {
   footerNav: {
@@ -34,7 +36,24 @@ const Footer3 = ({ footerNav }: Props) => {
                     key={`footer_nav-${i}`}
                     className="text-[18px] leading-[30px] text-secondary hover:text-primary hover:tracking-wide transition-all duration-300"
                   >
-                    <Link href={item.path}>{item.name}</Link>
+                    <div
+                      onClick={() => {
+                        if (item.path.includes("#")) {
+                          scroller.scrollTo(
+                            `${item.path.split("#").join("")}`,
+                            {
+                              duration: 300,
+                              smooth: true,
+                            }
+                          );
+                        } else {
+                          window.open(item.path, "_blank");
+                        }
+                      }}
+                      className="cursor-pointer"
+                    >
+                      {item.name}
+                    </div>
                   </li>
                 ))}
               </ul>

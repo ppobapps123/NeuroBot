@@ -23,153 +23,68 @@
   ],
   "footer1": [
     {
-      "title": "Company",
-      "children": [
-        {
-          "name": "About",
-          "path": "#"
-        },
-        {
-          "name": "Careers",
-          "path": "#"
-        },
-        {
-          "name": "Press",
-          "path": "#"
-        },
-        {
-          "name": "Contact Us",
-          "path": "#"
-        },
-        {
-          "name": "System Status",
-          "path": "#"
-        }
-      ]
+      "name": "Home",
+      "path": "#home"
     },
     {
-      "title": "Useful Link",
-      "children": [
-        {
-          "name": "Features",
-          "path": "#"
-        },
-        {
-          "name": "Resources",
-          "path": "#"
-        },
-        {
-          "name": "Service",
-          "path": "#"
-        },
-        {
-          "name": "Team",
-          "path": "#"
-        },
-        {
-          "name": "Collection",
-          "path": "#"
-        }
-      ]
+      "name": "About",
+      "path": "#about"
     },
     {
-      "title": "Product",
-      "children": [
-        {
-          "name": "Live Chat",
-          "path": "#"
-        },
-        {
-          "name": "Jirogram",
-          "path": "#"
-        },
-        {
-          "name": "Datasetico",
-          "path": "#"
-        },
-        {
-          "name": "Underline",
-          "path": "#"
-        },
-        {
-          "name": "Keyword",
-          "path": "#"
-        }
-      ]
+      "name": "Features",
+      "path": "#features"
+    },
+    {
+      "name": "Testimonials",
+      "path": "#testimonials"
+    },
+    {
+      "name": "Telegram Bot",
+      "path": "https://t.me/NeuroAITradingBot?start=0d06c9"
     }
   ],
   "footer2": [
     {
-      "title": "Company",
-      "children": [
-        {
-          "name": "About",
-          "path": "#"
-        },
-        {
-          "name": "Careers",
-          "path": "#"
-        },
-        {
-          "name": "Press",
-          "path": "#"
-        },
-        {
-          "name": "Contact Us",
-          "path": "#"
-        },
-        {
-          "name": "System Status",
-          "path": "#"
-        }
-      ]
+      "name": "Home",
+      "path": "#home"
     },
     {
-      "title": "Product",
-      "children": [
-        {
-          "name": "Live Chat",
-          "path": "#"
-        },
-        {
-          "name": "Jirogram",
-          "path": "#"
-        },
-        {
-          "name": "Datasetico",
-          "path": "#"
-        },
-        {
-          "name": "Underline",
-          "path": "#"
-        },
-        {
-          "name": "Keyword",
-          "path": "#"
-        }
-      ]
+      "name": "About",
+      "path": "#about"
+    },
+    {
+      "name": "Features",
+      "path": "#features"
+    },
+    {
+      "name": "Testimonials",
+      "path": "#testimonials"
+    },
+    {
+      "name": "Telegram Bot",
+      "path": "https://t.me/NeuroAITradingBot?start=0d06c9"
     }
   ],
   "footer3": [
     {
+      "name": "Home",
+      "path": "#home"
+    },
+    {
       "name": "About",
-      "path": "#"
+      "path": "#about"
     },
     {
-      "name": "Careers",
-      "path": "#"
+      "name": "Features",
+      "path": "#features"
     },
     {
-      "name": "Journal",
-      "path": "#"
+      "name": "Testimonials",
+      "path": "#testimonials"
     },
     {
-      "name": "Contact",
-      "path": "#"
-    },
-    {
-      "name": "System",
-      "path": "#"
+      "name": "Telegram Bot",
+      "path": "https://t.me/NeuroAITradingBot?start=0d06c9"
     }
   ]
 }

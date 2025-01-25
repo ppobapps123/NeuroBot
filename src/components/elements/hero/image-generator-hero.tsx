@@ -15,6 +15,7 @@ import Generator1 from "../generator/generator1";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { Element } from "react-scroll";
+import Counter2 from "../counter/counter2";
 
 type Props = {
   hero: {

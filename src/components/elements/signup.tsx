@@ -91,191 +91,19 @@ const Signup = ({ isOpen, close, open }: Props) => {
             <h2 className="text-[30px] text-center text-primary font-colasta font-bold leading-none">
               <span className="font-normal">Start Your Journey</span> with us.
             </h2>
-            <div className="flex justify-center pt-[20px] pb-[45px]">
-              <Image
-                width={45}
-                height={45}
-                src="/assets/imgs/shape/shape-s-55.png"
-                alt="shape image"
-              />
-            </div>
           </DialogHeader>
-          <div>
-            <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className={cn("space-y-3")}
-              >
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          placeholder="Type your name"
-                          {...field}
-                          className="w-full h-[50px] md:h-[60px] px-[16px] md:px-[30px] outline-0 rounded-full border border-border focus:border-theme"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="username"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          placeholder="User name"
-                          {...field}
-                          className="w-full h-[50px] md:h-[60px] px-[16px] md:px-[30px] outline-0 rounded-full border border-border focus:border-theme"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          placeholder="Type Email"
-                          {...field}
-                          className="w-full h-[50px] md:h-[60px] px-[16px] md:px-[30px] outline-0 rounded-full border border-border focus:border-theme"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="password"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          placeholder="Type Password"
-                          {...field}
-                          className="w-full h-[50px] md:h-[60px] px-[16px] md:px-[30px] outline-0 rounded-full border border-border focus:border-theme"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="confirm_password"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormControl>
-                        <Input
-                          placeholder="Confirm Password"
-                          {...field}
-                          className="w-full h-[50px] md:h-[60px] px-[16px] md:px-[30px] outline-0 rounded-full border border-border focus:border-theme"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="agree"
-                  render={({ field }) => (
-                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 !mt-5">
-                      <FormControl>
-                        <Checkbox
-                          checked={field.value}
-                          onCheckedChange={field.onChange}
-                        />
-                      </FormControl>
-                      <div className="space-y-1 leading-none">
-                        <FormLabel>
-                          I agree to sassly{" "}
-                          <Link
-                            href="/booking/privacy-policy"
-                            onClick={() => close()}
-                            className="font-semibold underline"
-                          >
-                            Terms of Service
-                          </Link>
-                          .
-                        </FormLabel>
-                      </div>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <Button
-                  variant="primary"
-                  type="submit"
-                  className="w-full rounded-full !mt-[42px]"
-                >
-                  <span className="btn-span" data-text="Register">
-                    Register
-                  </span>
-                </Button>
-              </form>
-            </Form>
-          </div>
-          <div className="mt-[15px] text-center">
-            <p className="text-[14px]">
-              Already have an account?{" "}
-              <span
-                className="font-semibold cursor-pointer"
-                onClick={() => {
-                  open();
-                  close();
-                }}
-              >
-                Login Here!
-              </span>
-            </p>
-          </div>
-          <div className="relative flex mt-[38px] items-center">
-            <div className="flex-grow border-t border-border"></div>
-            <span className="flex-shrink mx-4 text-[16px] text-primary font-bold leading-none font-colasta">
-              OR
-            </span>
-            <div className="flex-grow border-t border-border"></div>
-          </div>
           <div className="mt-[37px] flex justify-center items-center gap-[10px] ">
-            <div>
-              <Image
-                width={60}
-                height={60}
-                src="/assets/imgs/icon/icon-apple.png"
-                alt="Icon"
-              />
-            </div>
-            <div>
-              <Image
-                width={60}
-                height={60}
-                src="/assets/imgs/icon/icon-google.png"
-                alt="Icon"
-              />
-            </div>
-            <div>
+            <a href="https://x.com/" target="_blank" className="group flex justify-center items-center gap-x-2">
               <Image
                 width={60}
                 height={60}
                 src="/assets/imgs/icon/icon-x.png"
                 alt="Icon"
+                className="group-hover:bg-slate-300 group-hover:rounded-full ease-in-out duration-300"
               />
-            </div>
+
+              <p className="group-hover:text-[#000]">@NeuroBot</p>
+            </a>
           </div>
         </ScrollArea>
       </DialogContent>
