@@ -41,11 +41,11 @@ const ImageGeneratorHero = ({ hero }: Props) => {
           width={1920}
           height={920}
           src="/assets/imgs/shape/shape-s-33.png"
-          className="object-cover"
+          className="object-cover h-[90%]"
           alt="bg image"
         />
       </div>
-      <div className="container relative z-[2] text-center" ref={containerRef}>
+      <div className="container relative z-[2] text-center lg:pb-[50px] lg:pt-[40px] pb-[30px] pt-[40px]" ref={containerRef}>
         <h1
           dangerouslySetInnerHTML={markdownify(title)}
           className="text-[34px] md:text-[50px] xl:text-[70px] 2xl:text-[110px] max-w-[410px] md:max-w-[510px] xl:max-w-[710px] 2xl:max-w-[1010px] mx-auto !font-bold !leading-[1.09] [&>span]:bg-gradient-160 [&>span]:from-[#C581FB] [&>span]:from-[48.22%] [&>span]:to-[#FFAD93] [&>span]:to-[71.11%] [&>span]:bg-clip-text [&>span]:text-transparent [&>img]:inline-block [&>img]:-me-[20px] xl:[&>img]:-me-[30px] 2xl:[&>img]:-me-[50px] [&>img]:w-[74px] md:[&>img]:w-[94px] xl:[&>img]:w-[104px] 2xl:[&>img]:w-[174px] [&>img]:rtl_y has_fade_anim"
@@ -56,9 +56,6 @@ const ImageGeneratorHero = ({ hero }: Props) => {
         >
           {details}
         </p>
-        <div className="mt-[36px] xl:mt-[46px] 2xl:mt-[56px]">
-          <Generator1 />
-        </div>
       </div>
     </section>
   );

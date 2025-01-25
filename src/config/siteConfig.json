@@ -6,12 +6,12 @@
   },
 
   "site_info": {
-    "title": "Sassly",
-    "description": "Sassly is a real early-stage software looking for an analytics platform that scales with you, check out our stage program.",
+    "title": "Neuro Bot",
+    "description": "The ultimate Solana Trading Bot powered by AI Agent designed for speed, efficiency, and maximum rewards.",
     "base_url": "",
-    "logo": "/assets/imgs/logo/logo.png",
+    "logo": "",
     "logo_light": "/assets/imgs/logo/logo-light.png",
-    "logo_icon": "/assets/imgs/logo/logo-icon.png",
+    "logo_icon": "",
     "logo_width": 115,
     "logo_height": 32,
     "logo_text": "Sassly"

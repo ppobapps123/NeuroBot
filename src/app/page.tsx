@@ -38,8 +38,6 @@ export default function Page() {
     <main>
       <SeoData />
       <ImageGeneratorHero hero={hero} />
-      <ImageGeneratorGallery gallery={gallery} />
-      <Brand3 brand={brand} />
       <ImageGeneratorFeature feature={feature} />
       <ImageGeneratorService service={service} services={services} />
       <ImageGeneratorIntegration integration={integration} />
