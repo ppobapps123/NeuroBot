@@ -17,6 +17,7 @@ import ImageGeneratorService from "@/components/elements/service/image-generator
 import ImageGeneratorTestimonial from "@/components/elements/testimonial/image-generator-testimonial";
 import Counter2 from "@/components/elements/counter/counter2";
 import CounterWrapper from "@/components/elements/counter/counterWrapper";
+import MainFAQ from "@/components/elements/faq/main-faq";
 
 export default function Page() {
   const hero = getMainPage("/heros/image-generator-hero.mdx");
@@ -35,6 +36,7 @@ export default function Page() {
   const blog = getMainPage("/blogs/main/_index.mdx");
   const blogs = getAllPages("/blogs/main");
   const cta = getMainPage("/ctas/cta3.mdx");
+  const faq = getMainPage("/faqs/faq1.mdx");
 
   return (
     <main>
@@ -45,6 +47,7 @@ export default function Page() {
       <ImageGeneratorService service={service} services={services} />
       <ImageGeneratorIntegration integration={integration} />
       <ImageGeneratorTestimonial testimonial={testimonial} />
+      <MainFAQ faq={faq} />
       <CTA3
         cta={cta}
         className="pt-[50px] md:pt-[75px] xl:pt-[100px] 2xl:pt-[124px] sec_space_bottom3"
