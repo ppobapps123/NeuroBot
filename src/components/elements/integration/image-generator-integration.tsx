@@ -65,7 +65,7 @@ const ImageGeneratorIntegration = ({ integration }: Props) => {
               </div>
             )}
             <p className="mt-[44px] 2xl:mt-[74px] has_fade_anim">{details}</p>
-            {items && items.length && (
+            {/* {items && items.length && (
               <div className="mt-[33px] xl:mt-[43px] 2xl:mt-[53px] flex gap-[20px] flex-wrap has_fade_anim">
                 {items.map((item, i) => (
                   <div
@@ -82,7 +82,7 @@ const ImageGeneratorIntegration = ({ integration }: Props) => {
                   </div>
                 ))}
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>

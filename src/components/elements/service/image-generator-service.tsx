@@ -123,7 +123,7 @@ const ImageGeneratorService = ({ service }: Props) => {
   );
 
   return (
-    <section className="pt-[50px] md:pt-[75px] xl:pt-[100px] 2xl:pt-[124px]">
+    <section id="features" className="pt-[50px] md:pt-[75px] xl:pt-[100px] 2xl:pt-[124px]">
       <div className="container" ref={containerRef}>
         <TitleSection2
           title={title}

@@ -328,6 +328,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .colasta-bold {
 
   h1,

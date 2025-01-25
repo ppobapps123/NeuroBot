@@ -37,7 +37,7 @@ const ImageGeneratorHero = ({ hero }: Props) => {
   );
 
   return (
-    <section className="relative pt-[121px] xl:pt-[151px] 2xl:pt-[231px] pb-[63px] lg:pb-[93px] xl:pb-[113px]">
+    <section id="home" className="relative pt-[121px] xl:pt-[151px] 2xl:pt-[231px] pb-[63px] lg:pb-[93px] xl:pb-[113px]">
       <div className="absolute select-none w-full h-full top-0 start-0 before:absolute before:content-[''] before:w-full before:h-full before:top-0 before:start-0 before:bg-gradient-180 before:from-[#05111900] before:from-0% before:to-[#051119] before:to-[129.9%]">
         <Image
           width={1920}

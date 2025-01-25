@@ -6,7 +6,15 @@
     },
     {
       "name": "About",
-      "path": "/about"
+      "path": "#about"
+    },
+    {
+      "name": "Features",
+      "path": "#features"
+    },
+    {
+      "name": "Testimonials",
+      "path": "#testimonials"
     },
     {
       "name": "Telegram Bot",

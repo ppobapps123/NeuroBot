@@ -68,7 +68,7 @@ const ImageGeneratorFeature = ({ feature }: Props) => {
   );
 
   return (
-    <section className="sec_space_top3">
+    <section id="about" className="sec_space_top3">
       <div className="container" ref={containerRef}>
         <div className="flex justify-between items-center gap-x-[60px] gap-y-[40px] flex-col md:flex-row">
           <div className="max-w-[431px]">

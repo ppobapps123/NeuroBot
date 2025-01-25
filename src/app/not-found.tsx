@@ -17,7 +17,6 @@ export default function NotFound() {
 
   return (
     <main>
-      <Header1 headerNav={navigation.header} />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <div className="absolute w-full h-[1100px] top-0 start-0 -z-[1] bg-gradient-180 from-[#FBF7F4] to-[#fbf7f400]" />

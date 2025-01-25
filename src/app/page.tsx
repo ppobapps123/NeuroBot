@@ -42,7 +42,6 @@ export default function Page() {
       <ImageGeneratorService service={service} services={services} />
       <ImageGeneratorIntegration integration={integration} />
       <ImageGeneratorTestimonial testimonial={testimonial} />
-      <Separator className="bg-[#252D33] container" />
       <CTA3
         cta={cta}
         className="pt-[50px] md:pt-[75px] xl:pt-[100px] 2xl:pt-[124px] sec_space_bottom3"
