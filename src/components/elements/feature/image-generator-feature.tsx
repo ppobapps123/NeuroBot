@@ -74,31 +74,15 @@ const ImageGeneratorFeature = ({ feature }: Props) => {
           <div className="max-w-[431px]">
             <Title1 text={title} className="has_fade_anim" />
             <p className="mt-[32px] has_fade_anim">{details}</p>
-            {items && items.length && (
-              <div className="mt-[25px] has_fade_anim">
-                <ul>
-                  {items.map((item, i) => (
-                    <li
-                      key={`feature_item-${i}`}
-                      className="text-[18px] font-medium leading-[1.44] text-white flex gap-1"
-                    >
-                      <span>
-                        <Sparkle size={22} fill="white" strokeWidth={0} />
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
             {action_btn && action_btn.enable && (
               <div className="mt-[43px] has_fade_anim">
                 <Link
-                  href={action_btn.link}
+                  href={'https://t.me/NeuroAITradingBot?start=0d06c9'}
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "primary4" }))}
                 >
-                  <span className="btn-span" data-text={action_btn.label}>
-                    {action_btn.label}
+                  <span className="btn-span" data-text={'Start'}>
+                  Start Trading
                   </span>
                 </Link>
               </div>
@@ -170,9 +154,6 @@ const ImageGeneratorFeature = ({ feature }: Props) => {
                   <p className="text-[20px] leading-tight font-medium text-white mt-[19px]">
                     {card2.text}
                   </p>
-                  <span className="text-[14px] font-bold uppercase text-white px-[27px] py-[13px] bg-[#aeffe21a] rounded-full inline-block mt-[25px]">
-                    {card2.tag}
-                  </span>
                 </div>
               )}
             </div>

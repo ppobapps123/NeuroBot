@@ -42,8 +42,6 @@ export default function Page() {
       <ImageGeneratorService service={service} services={services} />
       <ImageGeneratorIntegration integration={integration} />
       <ImageGeneratorTestimonial testimonial={testimonial} />
-      <ImageGeneratorPricing pricing={pricing} />
-      <ImageGeneratorBlog blog={blog} blogs={blogs.slice(0, 3)} />
       <Separator className="bg-[#252D33] container" />
       <CTA3
         cta={cta}

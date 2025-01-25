@@ -2,101 +2,15 @@
   "header": [
     {
       "name": "Home",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Booking Software",
-          "path": "/booking"
-        },
-        {
-          "name": "Virtual Meeting",
-          "path": "/meeting"
-        },
-        {
-          "name": "CRM Software",
-          "path": "/crm"
-        },
-        {
-          "name": "Ai Chatbot",
-          "path": "/chatbot"
-        },
-        {
-          "name": "Customer Service",
-          "path": "/customer-service"
-        },
-        {
-          "name": "Ai Image Generator",
-          "path": "/image-generator"
-        },
-        {
-          "name": "Ai Content Writer",
-          "path": "/content-writer"
-        },
-        {
-          "name": "Ai Video Editor",
-          "path": "/video-editor"
-        },
-        {
-          "name": "Ai SEO",
-          "path": "/seo"
-        },
-        {
-          "name": "Ai Startup",
-          "path": "/startup"
-        },
-        {
-          "name": "Mobile App / SASS",
-          "path": "/mobile-app"
-        },
-        {
-          "name": "Marketing Automation",
-          "path": "/marketing"
-        }
-      ]
+      "path": "#"
     },
     {
       "name": "About",
       "path": "/about"
     },
     {
-      "name": "Integration",
-      "path": "/integration"
-    },
-    {
-      "name": "Pages",
-      "path": "#",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Team",
-          "path": "/team"
-        },
-        {
-          "name": "Project",
-          "path": "/project"
-        },
-        {
-          "name": "Pricing",
-          "path": "/pricing"
-        },
-        {
-          "name": "FAQ",
-          "path": "/faq"
-        },
-        {
-          "name": "Privacy & Policy",
-          "path": "/privacy-policy"
-        }
-      ]
-    },
-    {
-      "name": "Blog",
-      "path": "/blog"
-    },
-    {
-      "name": "Contact",
-      "path": "/contact"
+      "name": "Telegram Bot",
+      "path": "/about"
     }
   ],
   "footer1": [

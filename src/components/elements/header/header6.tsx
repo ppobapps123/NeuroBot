@@ -74,21 +74,14 @@ const Header6 = ({ headerNav, signUpBtnClassName }: Props) => {
               <Menu1 headerNav={headerNav} />
             </div>
             <div className="col-span-6 md:col-span-5 xl:col-span-1 flex justify-end items-center gap-[10px]">
-              <div>
-                <FaMagnifyingGlass
-                  color="white"
-                  className="cursor-pointer"
-                  onClick={() => setSearchOpen(true)}
-                />
-              </div>
               <Button
                 variant="primary2"
                 size="sm"
                 onClick={() => setIsOpen(true)}
                 className={cn(signUpBtnClassName)}
               >
-                <span className="btn-span" data-text="Sign up">
-                  Sign up
+                <span className="btn-span" data-text="Link">
+                  Get Links
                 </span>
               </Button>
               <div className="flex justify-end xl:hidden">

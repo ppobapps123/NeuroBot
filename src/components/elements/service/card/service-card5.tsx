@@ -19,12 +19,14 @@ type Props = {
 };
 
 const ServiceCard5 = ({ service }: Props) => {
-  const { title, short_description, image } = service.data;
+  const { title, short_description, image, color } = service.data;
   return (
     <div className="px-[30px] xl:px-[60px] text-center">
-      <div className="flex justify-center">
+      <div
+        className={`flex justify-center ${color} w-fit m-auto p-3 rounded-lg`}
+      >
         {image && (
-          <Image width={55} height={55} src={image} alt="feature icon" />
+          <Image width={25} height={25} src={image} alt="feature icon" />
         )}
       </div>
       <div className="mt-[30px] xl:mt-[40px]">
@@ -33,19 +35,7 @@ const ServiceCard5 = ({ service }: Props) => {
           dangerouslySetInnerHTML={markdownify(title)}
         />
 
-        <p className="mt-[25px]">{short_description}</p>
-        <Link
-          href="#"
-          className={cn(
-            buttonVariants({ variant: "normal" }),
-            "group mt-[30px] xl:mt-[40px] text-white hover:text-white"
-          )}
-        >
-          Learn more{" "}
-          <span className="rtl_y">
-            <FaArrowRight className="group-hover:translate-x-[5px] duration-300 h-[14px]" />
-          </span>
-        </Link>
+        <p className="mt-[25px] group-hover:text-white">{short_description}</p>
       </div>
     </div>
   );

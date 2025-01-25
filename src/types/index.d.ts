@@ -17,6 +17,7 @@ export type ActionBtnType = {
 export type ServiceDetailsType = {
   title: string;
   short_description: string;
+  color: string;
   image: string;
 };
 

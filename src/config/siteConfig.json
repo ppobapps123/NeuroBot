@@ -2,19 +2,19 @@
   "metadata": {
     "meta_author": "Wealcoder",
     "meta_image": "",
-    "meta_description": "Sassly Landing Page"
+    "meta_description": "NeuroBot Landing Page"
   },
 
   "site_info": {
-    "title": "Neuro Bot",
-    "description": "The ultimate Solana Trading Bot powered by AI Agent designed for speed, efficiency, and maximum rewards.",
+    "title": "NeuroBot",
+    "description": "The Ultimate Solana Trading Bot powered by AI Agent designed for speed, efficiency, and maximum rewards.",
     "base_url": "",
     "logo": "",
     "logo_light": "/assets/imgs/logo/logo-light.png",
     "logo_icon": "",
     "logo_width": 115,
     "logo_height": 32,
-    "logo_text": "Sassly"
+    "logo_text": "NeuroBot"
   },
 
   "footer_info": {
