@@ -20,6 +20,7 @@ import ServiceCard2 from "./card/service-card2";
 import ServiceCard3 from "./card/service-card3";
 import ServiceCard4 from "./card/service-card4";
 import ServiceCard6 from "./card/service-card6";
+import { Element } from "react-scroll";
 
 type Props = {
   service: {
@@ -123,31 +124,33 @@ const ImageGeneratorService = ({ service }: Props) => {
   );
 
   return (
-    <section id="features" className="pt-[50px] md:pt-[75px] xl:pt-[100px] 2xl:pt-[124px]">
-      <div className="container" ref={containerRef}>
-        <TitleSection2
-          title={title}
-          details={details}
-          titleClassName="max-w-[700px]"
-          detailsClassName="max-w-[700px]"
-        />
+    <Element name="features">
+      <section className="pt-[50px] md:pt-[75px] xl:pt-[100px] 2xl:pt-[124px]">
+        <div className="container" ref={containerRef}>
+          <TitleSection2
+            title={title}
+            details={details}
+            titleClassName="max-w-[700px]"
+            detailsClassName="max-w-[700px]"
+          />
 
-        {services && services.length && (
-          <div className="mt-[33px] xl:mt-[43px] 2xl:mt-[63px]">
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-y-[50px] px-[14px] py-[74px] gap-x-2">
-              {services.map((item, i) => (
-                <div
-                  key={item.slug}
-                  className="group bg-[#121B21] rounded-theme py-10 cursor-pointer hover:bg-[#24DC87] ease-in-out duration-300"
-                >
-                  <ServiceCard5 service={item} />
-                </div>
-              ))}
+          {services && services.length && (
+            <div className="mt-[33px] xl:mt-[43px] 2xl:mt-[63px]">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-y-[50px] px-[14px] py-[74px] gap-x-2">
+                {services.map((item, i) => (
+                  <div
+                    key={item.slug}
+                    className="group bg-[#121B21] rounded-theme py-10 cursor-pointer hover:bg-[#24DC87] ease-in-out duration-300"
+                  >
+                    <ServiceCard5 service={item} />
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
-      </div>
-    </section>
+          )}
+        </div>
+      </section>
+    </Element>
   );
 };
 

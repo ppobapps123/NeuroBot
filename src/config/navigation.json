@@ -2,7 +2,7 @@
   "header": [
     {
       "name": "Home",
-      "path": "#"
+      "path": "#home"
     },
     {
       "name": "About",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Telegram Bot",
-      "path": "/about"
+      "path": "https://t.me/NeuroAITradingBot?start=0d06c9"
     }
   ],
   "footer1": [

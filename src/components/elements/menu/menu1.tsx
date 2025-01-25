@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 // lib
 import { cn } from "@/lib/utils";
@@ -18,6 +18,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { scroller } from "react-scroll";
 
 type Props = {
   headerNav: MenuDataType;
@@ -33,6 +34,7 @@ const Menu1 = ({
   activeText,
 }: Props) => {
   const pathname = usePathname();
+  const router = useRouter();
 
   if (!(headerNav && headerNav.length)) {
     return;
@@ -99,10 +101,19 @@ const Menu1 = ({
               </>
             ) : (
               <NavigationMenuLink asChild>
-                <Link
-                  href={menu.path}
+                <div
+                  onClick={() => {
+                    if (menu.path.includes("#")) {
+                      scroller.scrollTo(`${menu.path.split("#").join("")}`, {
+                        duration: 300,
+                        smooth: true,
+                      });
+                    } else {
+                      window.open(menu.path,'_blank');
+                    }
+                  }}
                   className={cn(
-                    "hover:text-theme flex items-center font-medium text-[16px] leading-none text-primary px-[15px] py-[37px] capitalize",
+                    "cursor-pointer hover:text-theme flex items-center font-medium text-[16px] leading-none text-primary px-[15px] py-[37px] capitalize",
                     pathname &&
                       (pathname === menu.path + "/" || pathname === menu.path)
                       ? "text-theme"
@@ -111,7 +122,7 @@ const Menu1 = ({
                   )}
                 >
                   {menu.name}
-                </Link>
+                </div>
               </NavigationMenuLink>
             )}
           </NavigationMenuItem>
