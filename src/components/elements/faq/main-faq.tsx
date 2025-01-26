@@ -87,8 +87,6 @@ const MainFAQ = ({ faq }: Props) => {
     { scope: containerRef }
   );
 
-  console.log(items);
-
   return (
     <section className="pt-[5px] md:pt-[35px] xl:pt-[65px] 2xl:pt-[135px] mt-10">
       <div className="container" ref={containerRef}>

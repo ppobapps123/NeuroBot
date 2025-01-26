@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 
@@ -23,6 +24,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { scroller } from "react-scroll";
 
 type Props = {
   headerNav: MenuDataType;
@@ -30,8 +32,16 @@ type Props = {
 };
 
 const Offcanvas1 = ({ headerNav, actionBtnClassName }: Props) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
   return (
-    <Drawer direction="left">
+    <Drawer
+      dismissible={false}
+      open={isOpen}
+      onOpenChange={setIsOpen}
+      disablePreventScroll={true}
+      direction="left"
+    >
       <DrawerTrigger asChild>
         <button>
           <FaBars className={cn("w-6 h-6", actionBtnClassName)} />
@@ -50,7 +60,7 @@ const Offcanvas1 = ({ headerNav, actionBtnClassName }: Props) => {
               <React.Fragment key={`offcanvas_nav-${i}`}>
                 {item.hasChildren ? (
                   <Accordion type="single" collapsible className="w-full">
-                    <AccordionItem value={`item-${i}`} className="border-b-0">
+                    {/* <AccordionItem value={`item-${i}`} className="border-b-0">
                       <AccordionTrigger className="cursor-pointer py-[15px] text-[#999999] text-[14px] font-medium border-b border-[#31313160] hover:no-underline [&[data-state=open]]:text-[#D9D9D9]">
                         {item.name}
                       </AccordionTrigger>
@@ -59,26 +69,47 @@ const Offcanvas1 = ({ headerNav, actionBtnClassName }: Props) => {
                           item.children.length &&
                           item.children.map((child, j) => (
                             <DrawerClose asChild key={`nav_child-${i}${j}`}>
-                              <Link
-                                href={child.path}
+                              <div
+                                onClick={() => {
+                                  console.log(child.path)
+                                  if (child.path.includes("#")) {
+                                    scroller.scrollTo(
+                                      `${child.path.split("#").join("")}`,
+                                      {
+                                        duration: 300,
+                                        smooth: true,
+                                      }
+                                    );
+                                  } else {
+                                    window.open(child.path, "_blank");
+                                  }
+                                }}
                                 className="cursor-pointer py-[15px] text-[#D9D9D9] text-[14px] font-medium border-b last:border-b-0 border-[#31313160] block"
                               >
                                 {child.name}
-                              </Link>
+                              </div>
                             </DrawerClose>
                           ))}
                       </AccordionContent>
-                    </AccordionItem>
+                    </AccordionItem> */}
                   </Accordion>
                 ) : (
-                  <DrawerClose asChild>
-                    <Link
-                      href={item.path}
-                      className="cursor-pointer py-[15px] text-[#999999] text-[14px] font-medium border-b last:border-b-0 border-[#31313160] block"
-                    >
-                      {item.name}
-                    </Link>
-                  </DrawerClose>
+                  <div
+                    onClick={() => {
+                      setIsOpen(false);
+                      if (item.path.includes("#")) {
+                        scroller.scrollTo(`${item.path.split("#").join("")}`, {
+                          duration: 300,
+                          smooth: true,
+                        });
+                      } else {
+                        window.open(item.path, "_blank");
+                      }
+                    }}
+                    className="cursor-pointer py-[15px] text-[#999999] text-[14px] font-medium border-b last:border-b-0 border-[#31313160] block"
+                  >
+                    {item.name}
+                  </div>
                 )}
               </React.Fragment>
             ))}
