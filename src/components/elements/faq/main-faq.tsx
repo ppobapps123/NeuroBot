@@ -37,44 +37,53 @@ const MainFAQ = ({ faq }: Props) => {
 
   const items = [
     {
-      question: "What is NeuroBot AI?",
+      question: "What is NeuroBot?",
+      extra: "",
       answer:
-        "NeuroBot AI is a Solana trading bot powered by advanced AI technology, designed for speed, efficiency, and maximizing rewards. It scans on-chain data to identify promising tokens and executes trades with high precision.",
+        "NeuroBot is an advanced Solana trading bot designed to simplify token trading with features like auto-sniping, notifications, and customizable filters.",
     },
     {
-      question: "How does the Referral Program work?",
+      question: "How does the Auto Sniper feature work?",
+      extra: "",
       answer:
-        "The referral program rewards you with 50% of the fees whenever someone you refer makes a trade. It’s a great way to earn passive income.",
+        "The Auto Sniper automatically schedules token purchases as soon as new tokens are launched, giving you a competitive edge in trading.",
     },
     {
-      question: "What is the Binary System?",
+      question: "Is NeuroBot compatible with all wallets?",
+      extra: "",
       answer:
-        "The Binary System pairs points and has unlimited levels for massive growth. This means your rewards can increase exponentially as you level up.",
+        "Yes, NeuroBot supports most Solana-based wallets. You can set your default wallet for a seamless trading experience.",
     },
     {
-      question: "How can I earn exclusive rewards?",
+      question: "What are Filters and Filter Condition Types?",
+      extra:
+        "AND: Only matches tokens that meet all the enabled criteria.| OR: Matches tokens that meet at least one enabled criterion.",
       answer:
-        "As you trade with NeuroBot AI, you'll accumulate points. These points can be redeemed for exclusive rewards, making your trading experience even more valuable.",
+        "Filters allow you to customize the tokens you want notifications for. The Filter Condition Type lets you choose between:",
     },
     {
-      question: "What is AutoSnip Leveling?",
+      question: "Does NeuroBot support multiple Solana-based DEXs?",
+      extra: "",
       answer:
-        "AutoSnip Leveling is a feature designed to optimize your bot's performance for the lowest Jito tip, ensuring your trades are fast and efficient.",
+        "Yes, NeuroBot integrates with major Solana DEXs like Raydium, Orca, and Jupiter to provide flexibility in token trading.",
     },
     {
-      question: "Does NeuroBot AI offer protection against malicious bots?",
+      question: "Are there any subscription fees?",
+      extra: "",
       answer:
-        "Yes! NeuroBot AI is equipped with advanced protection to secure your trades from MEV (Miner Extractable Value) bots, keeping your transactions safe.",
+        "NeuroBot operates on a one-time payment model. No recurring subscription fees are required.",
     },
     {
-      question: "How do I get started with NeuroBot AI?",
+      question: "Can I test my strategies before trading?",
+      extra: "",
       answer:
-        "Simply add to your Telegram, start sniping tokens, and let the AI handle the rest! Begin maximizing your trading edge with NeuroBot AI today.",
+        "Absolutely! NeuroBot includes a backtesting feature, allowing you to test your strategies on historical data before live trading.",
     },
     {
-      question: "Are there any fees associated with using NeuroBot AI?",
+      question: "What happens if I miss a notification?",
+      extra: "",
       answer:
-        "Yes, there is a minimal fee of 1% on trades made using NeuroBot AI. This fee is the lowest in the industry to maximize your returns.",
+        "All missed notifications are logged in your dashboard, so you can review them anytime and take action accordingly.",
     },
   ];
 
@@ -121,7 +130,31 @@ const MainFAQ = ({ faq }: Props) => {
                       {typeof item.answer === "object" ? (
                         <p>hello</p>
                       ) : (
-                        item.answer
+                        <>
+                          {item.answer}
+
+                          {item.extra !== "" && (
+                            <ul className="list-disc ml-5">
+                              <li>
+                                <p className="mt-3 text-sm group-hover:text-white">
+                                  <span></span>
+                                  <span className="font-bold text-white">
+                                    {item.extra.split("|")[0].split(":")[0]}
+                                  </span>
+                                  :{item.extra.split("|")[0].split(":")[1]}
+                                </p>
+                              </li>
+                              <li>
+                                <p className="mt-3 text-sm group-hover:text-white">
+                                  <span className="font-bold text-white">
+                                    {item.extra.split("|")[1].split(":")[0]}
+                                  </span>
+                                  :{item.extra.split("|")[1].split(":")[1]}
+                                </p>
+                              </li>
+                            </ul>
+                          )}
+                        </>
                       )}
                     </AccordionContent>
                   </AccordionItem>
