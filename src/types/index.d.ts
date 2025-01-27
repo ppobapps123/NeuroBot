@@ -18,6 +18,7 @@ export type ServiceDetailsType = {
   title: string;
   short_description: string;
   color: string;
+  extra: string;
   image: string;
 };
 

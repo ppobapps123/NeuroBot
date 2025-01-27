@@ -19,7 +19,7 @@ type Props = {
 };
 
 const ServiceCard5 = ({ service }: Props) => {
-  const { title, short_description, image, color } = service.data;
+  const { title, short_description, image, color, extra } = service.data;
   return (
     <div className="px-[30px] xl:px-[60px] text-center">
       <div
@@ -36,6 +36,27 @@ const ServiceCard5 = ({ service }: Props) => {
         />
 
         <p className="mt-[25px] group-hover:text-white">{short_description}</p>
+
+        {extra !== "" && (
+          <>
+            <p className="mt-3 text-sm group-hover:text-white">
+              <span className="text-[#24DC87] group-hover:text-[#05111A]">❝ </span>
+              <span className="font-bold text-white">
+                {extra.split("|")[0].split(":")[0]}
+              </span>
+              :{extra.split("|")[0].split(":")[1]}
+              <span className="text-[#24DC87] group-hover:text-[#05111A]"> ❞</span>
+            </p>
+            <p className="mt-3 text-sm group-hover:text-white">
+              <span className="text-[#24DC87] group-hover:text-[#05111A]">❝ </span>
+              <span className="font-bold text-white">
+                {extra.split("|")[1].split(":")[0]}
+              </span>
+              :{extra.split("|")[1].split(":")[1]}
+              <span className="text-[#24DC87] group-hover:text-[#05111A]"> ❞</span>
+            </p>
+          </>
+        )}
       </div>
     </div>
   );

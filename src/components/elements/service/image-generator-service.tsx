@@ -41,18 +41,21 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "Powered By AI",
+        title: "NOTIFICATION",
         short_description:
-          "With our deep learning model on solana Our AI Agent scan through thousands of on chain data to identify token that matches your requirements as early as it get listed.",
+          "Enable this option to receive notifications when a new token is detected from PumpFun to Raydium.",
+        extra: "",
         color: "bg-orange-500",
-        image: "/assets/imgs/icon/new/brain.png",
+        image: "/assets/imgs/icon/new/bell-ring.png",
       },
     },
     {
       slug: "",
       data: {
-        title: "Fastest Sniping",
-        short_description: "Graduated from Pump.fun, optimized for precision.",
+        title: "AUTO SNIPER",
+        short_description:
+          "Enable this option to automatically schedule buy token whenever a new token is launched.",
+        extra: "",
         color: "bg-green-500",
         image: "/assets/imgs/icon/new/scissors-line-dashed.png",
       },
@@ -60,8 +63,10 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "Instant Buy & Sell",
-        short_description: "Execute trades seamlessly with the lowest 1% fee.",
+        title: "BUY TOKEN",
+        short_description:
+          "Configure buy amount and jito tip for buying each newly launched token.",
+        extra: "",
         color: "bg-yellow-500",
         image: "/assets/imgs/icon/new/arrow-right-left.png",
       },
@@ -69,27 +74,32 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "Referral Program",
-        short_description: "Earn 50% from fees when you refer others.",
-        color: "bg-purple-500",
-        image: "/assets/imgs/icon/new/refresh-ccw.png",
-      },
-    },
-    {
-      slug: "",
-      data: {
-        title: "Binary System",
+        title: "DEFAULT WALLET",
         short_description:
-          "Pairing points with unlimited levels for massive growth.",
-        color: "bg-blue-500",
-        image: "/assets/imgs/icon/new/binary.png",
+          "Set default wallet for buying newly launched token.",
+        extra: "",
+        color: "bg-purple-500",
+        image: "/assets/imgs/icon/new/wallet.png",
       },
     },
     {
       slug: "",
       data: {
-        title: "Earn Exclusive Rewards",
-        short_description: "Collect points and redeem limited rewards.",
+        title: "FILTER",
+        short_description:
+          "Fine-tune your notifications by selecting the criteria for tokens.",
+        extra: "",
+        color: "bg-blue-500",
+        image: "/assets/imgs/icon/new/sliders-horizontal.png",
+      },
+    },
+    {
+      slug: "",
+      data: {
+        title: "FILTER CONDITION TYPE",
+        short_description: "Choose how the filters are applied:",
+        extra:
+          "AND: Matches only if all enabled filters are satisfied.| OR: Matches if at least one enabled filter is satisfied.",
         color: "bg-purple-300",
         image: "/assets/imgs/icon/new/hand-coins.png",
       },
@@ -97,17 +107,21 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "AutoSnip Leveling",
-        short_description: "Optimized for lowest Jito tip.",
+        title: "PRICE ALERTS",
+        short_description:
+          "Stay ahead of the market by enabling price alerts that notify you when a token reaches a specific price threshold.",
+        extra: "",
         color: "bg-pink-500",
-        image: "/assets/imgs/icon/new/square-bottom-dashed-scissors.png",
+        image: "/assets/imgs/icon/new/chart-no-axes-combined.png",
       },
     },
     {
       slug: "",
       data: {
-        title: "Anti-MEV Bots",
-        short_description: "Secure trades with advanced protection.",
+        title: "MULTI-NETWORK SUPPORT",
+        short_description:
+          "Seamlessly trade across multiple Solana-based DEXs, such as Raydium, Orca, or Jupiter, using one unified interface.",
+        extra: "",
         color: "bg-green-300",
         image: "/assets/imgs/icon/new/shield-check.png",
       },
