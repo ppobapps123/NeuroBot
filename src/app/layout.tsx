@@ -44,7 +44,7 @@ export default function RootLayout({
 
             <div id="smooth-wrapper">
               <div id="smooth-content">
-                <div className="max-w-[1920px] overflow-hidden mx-auto bg-[#05111A] ">
+                <div className="overflow-hidden mx-auto bg-[#05111A] ">
                   {children}
                 </div>
                 <Footer3 footerNav={navigation.footer3} />

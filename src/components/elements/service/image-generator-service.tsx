@@ -150,7 +150,7 @@ const ImageGeneratorService = ({ service }: Props) => {
 
           {services && services.length && (
             <div className="mt-[33px] xl:mt-[43px] 2xl:mt-[63px]">
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-y-[50px] px-[14px] py-[74px] gap-x-2">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-y-[50px] px-[14px] py-[74px] gap-x-2">
                 {services.map((item, i) => (
                   <div
                     key={item.slug}

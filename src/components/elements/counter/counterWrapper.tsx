@@ -21,19 +21,22 @@ const CounterWrapper = () => {
       <Counter2
         counter={[
           {
-            number: 1000000,
+            number: 154988000,
             unit: "$",
             text: "Trade Volume",
+            isUnitOnLeft: true,
           },
           {
-            number: 100,
-            unit: "",
+            number: 5000,
+            unit: "+",
             text: "Total Users",
+            isUnitOnLeft: false,
           },
           {
-            number: 200,
-            unit: "",
+            number: 15,
+            unit: "K",
             text: "Total Trades",
+            isUnitOnLeft: false,
           },
         ]}
       />

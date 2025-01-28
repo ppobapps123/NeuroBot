@@ -65,7 +65,7 @@ const Header6 = ({ headerNav, signUpBtnClassName }: Props) => {
           "top-0 left-0 w-full z-[99]"
         )}
       >
-        <div className="container">
+        <div className="px-10">
           <div className="grid grid-cols-9 xl:grid-cols-4 gap-1 xl:gap-5 relative h-[90px] items-center">
             <div className="col-span-3 md:col-span-4 xl:col-span-1">
               <Logo light />

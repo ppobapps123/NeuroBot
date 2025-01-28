@@ -19,16 +19,19 @@ type Props = {
     number: number;
     unit: string;
     text: string;
+    isUnitOnLeft: boolean;
   }[];
 };
 
 const Child = ({
   unit,
+  isUnitOnLeft = false,
   number,
   text,
   id,
 }: {
   unit: string;
+  isUnitOnLeft: boolean;
   number: number;
   text: string;
   id: string;
@@ -43,21 +46,23 @@ const Child = ({
     // Animasi GSAP
     if (elements !== null) {
       gsap.fromTo(
-      elements,
-      { textContent: 0 }, // Nilai awal
-      {
-        textContent: number, // Nilai akhir
-        duration: 1.5, // Durasi animasi
-        ease: "power1.in",
-        snap: { textContent: 1 }, // Menjaga angka bulat
-        scrollTrigger: {
-          trigger: ".counter__number",
-        },
-        onUpdate: function () {
-          elements.textContent = formatter.format(Number(elements.textContent));
-        },
-      }
-    );
+        elements,
+        { textContent: 0 }, // Nilai awal
+        {
+          textContent: number, // Nilai akhir
+          duration: 1.5, // Durasi animasi
+          ease: "power1.in",
+          snap: { textContent: 1 }, // Menjaga angka bulat
+          scrollTrigger: {
+            trigger: ".counter__number",
+          },
+          onUpdate: function () {
+            elements.textContent = formatter.format(
+              Number(elements.textContent)
+            );
+          },
+        }
+      );
     }
   }, []);
 
@@ -65,13 +70,15 @@ const Child = ({
     <>
       <p className="mb-[18px]" dangerouslySetInnerHTML={markdownify(text)} />
       <h3 className="text-[20px] leading-none">
-        {
-          unit &&
-          <span className="text-[#24DC87]">{unit}</span>
-        }
+        {unit && (
+          <>{isUnitOnLeft && <span className="text-[#24DC87]">{unit}</span>}</>
+        )}
         <span id={id} className="count text-[#24DC87]">
           {number}
         </span>
+        {unit && (
+          <>{!isUnitOnLeft && <span className="text-[#24DC87]">{unit}</span>}</>
+        )}
       </h3>
     </>
   );
@@ -101,6 +108,7 @@ const Counter2 = ({ counter }: Props) => {
                 <Child
                   text={item.text}
                   number={item.number}
+                  isUnitOnLeft={item.isUnitOnLeft}
                   unit={item.unit}
                   id={i.toString()}
                 />

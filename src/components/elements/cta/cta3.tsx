@@ -61,7 +61,8 @@ const CTA3 = ({ cta, className, btnClassName, animatedBtn = false }: Props) => {
         {action_btn && action_btn.enable && (
           <div className="mt-[33px] xl:mt-[43px] flex justify-center items-center has_fade_anim">
             <Link
-              href={action_btn.link}
+              href={"https://t.me/NeuroAITradingBot?start=0d06c9"}
+              target="_blank"
               className={cn(
                 buttonVariants({ variant: "outline" }),
                 btnClassName

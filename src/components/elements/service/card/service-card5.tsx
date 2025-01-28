@@ -30,30 +30,43 @@ const ServiceCard5 = ({ service }: Props) => {
         )}
       </div>
       <div className="mt-[30px] xl:mt-[40px]">
-        <h3
+        {/* <h3
           className="text-[22px] xl:text-[24px] leading-tight xl:leading-[1.45]"
-          dangerouslySetInnerHTML={markdownify(title)}
-        />
+          dangerouslySetInnerHTML={}
+        /> */}
+        <h3 className="text-[22px] xl:text-[24px] leading-tight xl:leading-[1.45] capitalize">
+          {title}
+        </h3>
 
         <p className="mt-[25px] group-hover:text-white">{short_description}</p>
 
         {extra !== "" && (
           <>
             <p className="mt-3 text-sm group-hover:text-white">
-              <span className="text-[#24DC87] group-hover:text-[#05111A]">❝ </span>
+              <span className="text-[#24DC87] group-hover:text-[#05111A]">
+                ❝{" "}
+              </span>
               <span className="font-bold text-white">
                 {extra.split("|")[0].split(":")[0]}
               </span>
               :{extra.split("|")[0].split(":")[1]}
-              <span className="text-[#24DC87] group-hover:text-[#05111A]"> ❞</span>
+              <span className="text-[#24DC87] group-hover:text-[#05111A]">
+                {" "}
+                ❞
+              </span>
             </p>
             <p className="mt-3 text-sm group-hover:text-white">
-              <span className="text-[#24DC87] group-hover:text-[#05111A]">❝ </span>
+              <span className="text-[#24DC87] group-hover:text-[#05111A]">
+                ❝{" "}
+              </span>
               <span className="font-bold text-white">
                 {extra.split("|")[1].split(":")[0]}
               </span>
               :{extra.split("|")[1].split(":")[1]}
-              <span className="text-[#24DC87] group-hover:text-[#05111A]"> ❞</span>
+              <span className="text-[#24DC87] group-hover:text-[#05111A]">
+                {" "}
+                ❞
+              </span>
             </p>
           </>
         )}
