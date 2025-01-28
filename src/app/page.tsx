@@ -42,7 +42,14 @@ export default function Page() {
     <main>
       <SeoData />
       <ImageGeneratorHero hero={hero} />
-      <CounterWrapper/>
+
+      <div className="absolute top-0 left-0 w-full 2xl:h-[750px] xl:h-[600px] lg:h-[500px] h-[450px] z-[-1]">
+        <video autoPlay loop muted className="w-full h-full object-cover">
+          <source src="/assets/video/bg-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <CounterWrapper />
       <ImageGeneratorFeature feature={feature} />
       <ImageGeneratorService service={service} services={services} />
       <ImageGeneratorIntegration integration={integration} />

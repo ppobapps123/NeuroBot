@@ -5,6 +5,7 @@ import ScrollSmootherComponent from "@/components/tools/scroll-smoother";
 import ScrollTop from "@/components/tools/scroll-top";
 import { AppContextProvider } from "@/context/app.context";
 import navigation from "@/config/navigation.json";
+import LottieGenerator from "@/components/extra/LottieGenerator";
 
 // styles
 import "@/style/globals.css";
@@ -44,8 +45,12 @@ export default function RootLayout({
 
             <div id="smooth-wrapper">
               <div id="smooth-content">
-                <div className="overflow-hidden mx-auto bg-[#05111A] ">
-                  {children}
+                <div className="overflow-hidden mx-auto bg-[#05111A] relative">
+                  <div className="z-10 relative">{children}</div>
+                  {/* lottie */}
+                  <div className="absolute bottom-[-50px] right-0 -z-[1px]">
+                    {/* <LottieGenerator /> */}
+                  </div>
                 </div>
                 <Footer3 footerNav={navigation.footer3} />
               </div>

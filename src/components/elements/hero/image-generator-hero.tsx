@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 // gsap
@@ -16,6 +16,8 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { Element } from "react-scroll";
 import Counter2 from "../counter/counter2";
+import ReactPlayer from "react-player";
+import VideoBackground from "./videoBackground";
 
 type Props = {
   hero: {
@@ -41,7 +43,7 @@ const ImageGeneratorHero = ({ hero }: Props) => {
   return (
     <Element name="home">
       <section className="relative pt-[121px] xl:pt-[151px] 2xl:pt-[231px] pb-[63px] lg:pb-[93px] xl:pb-[113px]">
-        <div className="absolute select-none w-full h-full top-0 start-0 before:absolute before:content-[''] before:w-full before:h-full before:top-0 before:start-0 before:bg-gradient-180 before:from-[#05111900] before:from-0% before:to-[#051119] before:to-[129.9%]">
+        {/* <div className="absolute select-none w-full h-full top-0 start-0 before:absolute before:content-[''] before:w-full before:h-full before:top-0 before:start-0 before:bg-gradient-180 before:from-[#05111900] before:from-0% before:to-[#051119] before:to-[129.9%]">
           <Image
             width={1920}
             height={920}
@@ -49,7 +51,7 @@ const ImageGeneratorHero = ({ hero }: Props) => {
             className="object-cover h-[90%]"
             alt="bg image"
           />
-        </div>
+        </div> */}
         <div
           className="container relative z-[2] text-center lg:pb-[50px] lg:pt-[40px] pb-[30px] pt-[40px]"
           ref={containerRef}
@@ -79,6 +81,11 @@ const ImageGeneratorHero = ({ hero }: Props) => {
               Get Started
             </span>
           </Button>
+
+          {/* bg video */}
+          {/* <video height="256" loop muted autoPlay id="vid">
+            <source type="video/mp4" src="/assets/video/bg-video.mp4"></source>
+          </video> */}
         </div>
       </section>
     </Element>
