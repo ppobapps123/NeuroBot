@@ -80,10 +80,10 @@ const PNLSlider = ({ pnl }: Props) => {
                 ))}
             </CarouselContent>
 
-          {/* left overlay */}
-          <div className="absolute inset-y-0 left-0 w-1/6 lg:w-1/2 bg-gradient-to-r from-[#05111A] to-transparent pointer-events-none" />
-          {/* right overlay */}
-          <div className="absolute inset-y-0 right-0 w-1/6 lg:w-1/2 bg-gradient-to-l from-[#05111A] to-transparent pointer-events-none" />
+            {/* left overlay */}
+            <div className="absolute inset-y-0 left-0 w-1/6 lg:w-1/2 bg-gradient-to-r from-[#05111A] to-transparent pointer-events-none" />
+            {/* right overlay */}
+            <div className="absolute inset-y-0 right-0 w-1/6 lg:w-1/2 bg-gradient-to-l from-[#05111A] to-transparent pointer-events-none" />
           </Carousel>
         </div>
       </section>

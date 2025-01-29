@@ -20,6 +20,7 @@ import CounterWrapper from "@/components/elements/counter/counterWrapper";
 import MainFAQ from "@/components/elements/faq/main-faq";
 import PNLSlider from "@/components/elements/PNL/pnl-slider";
 import RefferalPage from "@/components/elements/refferal/refferal-page";
+import VideoViewer from "@/components/elements/video-viewer/video-viewer";
 
 export default function Page() {
   const hero = getMainPage("/heros/image-generator-hero.mdx");
@@ -54,7 +55,8 @@ export default function Page() {
       <CounterWrapper />
       <ImageGeneratorFeature feature={feature} />
       <ImageGeneratorService service={service} services={services} />
-      <RefferalPage/>
+      <RefferalPage />
+      <VideoViewer />
       <ImageGeneratorIntegration integration={integration} />
       <PNLSlider
         pnl={{
