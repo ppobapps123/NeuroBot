@@ -19,6 +19,7 @@ import Counter2 from "@/components/elements/counter/counter2";
 import CounterWrapper from "@/components/elements/counter/counterWrapper";
 import MainFAQ from "@/components/elements/faq/main-faq";
 import PNLSlider from "@/components/elements/PNL/pnl-slider";
+import RefferalPage from "@/components/elements/refferal/refferal-page";
 
 export default function Page() {
   const hero = getMainPage("/heros/image-generator-hero.mdx");
@@ -44,7 +45,7 @@ export default function Page() {
       <SeoData />
       <ImageGeneratorHero hero={hero} />
 
-      <div className="absolute top-0 left-0 w-full 2xl:h-[750px] xl:h-[600px] lg:h-[500px] h-[450px] z-[-1]">
+      <div className="absolute top-0 left-0 w-full h-[100vh] z-[-1]">
         <video autoPlay loop muted className="w-full h-full object-cover">
           <source src="/assets/video/bg-video.mp4" type="video/mp4" />
         </video>
@@ -53,13 +54,13 @@ export default function Page() {
       <CounterWrapper />
       <ImageGeneratorFeature feature={feature} />
       <ImageGeneratorService service={service} services={services} />
+      <RefferalPage/>
       <ImageGeneratorIntegration integration={integration} />
       <PNLSlider
         pnl={{
           data: {
-            title: "PnL Users",
-            details:
-              "Optimize your crypto strategy – we’ll help you achieve maximum profit!",
+            title: "",
+            details: "",
             items: [
               { image: "/assets/imgs/PNL/pnl-1.png" },
               { image: "/assets/imgs/PNL/pnl-2.png" },

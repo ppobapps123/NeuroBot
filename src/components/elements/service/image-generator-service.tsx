@@ -41,7 +41,7 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "NOTIFICATION",
+        title: "Notification",
         short_description:
           "Enable this option to receive notifications when a new token is detected from PumpFun to Raydium.",
         extra: "",
@@ -52,7 +52,7 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "AUTO SNIPER",
+        title: "Auto Sniper",
         short_description:
           "Enable this option to automatically schedule buy token whenever a new token is launched.",
         extra: "",
@@ -63,7 +63,7 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "BUY TOKEN",
+        title: "Buy Token",
         short_description:
           "Configure buy amount and jito tip for buying each newly launched token.",
         extra: "",
@@ -74,7 +74,7 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "DEFAULT WALLET",
+        title: "Default Wallet",
         short_description:
           "Set default wallet for buying newly launched token.",
         extra: "",
@@ -85,7 +85,7 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "FILTER",
+        title: "Filter",
         short_description:
           "Fine-tune your notifications by selecting the criteria for tokens.",
         extra: "",
@@ -96,7 +96,7 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "FILTER CONDITION TYPE",
+        title: "Filter Condition Type",
         short_description: "Choose how the filters are applied:",
         extra:
           "AND: Matches only if all enabled filters are satisfied.| OR: Matches if at least one enabled filter is satisfied.",
@@ -107,7 +107,7 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "PRICE ALERTS",
+        title: "Price Alerts",
         short_description:
           "Stay ahead of the market by enabling price alerts that notify you when a token reaches a specific price threshold.",
         extra: "",
@@ -118,7 +118,7 @@ const ImageGeneratorService = ({ service }: Props) => {
     {
       slug: "",
       data: {
-        title: "MULTI-NETWORK SUPPORT",
+        title: "Multi-Network Support",
         short_description:
           "Seamlessly trade across multiple Solana-based DEXs, such as Raydium, Orca, or Jupiter, using one unified interface.",
         extra: "",
@@ -150,11 +150,11 @@ const ImageGeneratorService = ({ service }: Props) => {
 
           {services && services.length && (
             <div className="mt-[33px] xl:mt-[43px] 2xl:mt-[63px]">
-              <div className="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-y-[50px] px-[14px] py-[74px] gap-x-2">
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(400px,1fr))] gap-y-[50px] px-[14px] py-[74px] gap-x-2">
                 {services.map((item, i) => (
                   <div
                     key={item.slug}
-                    className="group bg-[#121B21] rounded-theme py-10 cursor-pointer hover:bg-[#24DC87] ease-in-out duration-300"
+                    className="group has_fade_anim bg-[#121B21] rounded-theme py-10 cursor-pointer hover:bg-[#24DC87] ease-in-out duration-300"
                   >
                     <ServiceCard5 service={item} />
                   </div>

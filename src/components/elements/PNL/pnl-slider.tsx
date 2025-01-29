@@ -62,7 +62,7 @@ const PNLSlider = ({ pnl }: Props) => {
             }}
             className="w-full mt-[33px] xl:mt-[43px] 2xl:mt-[63px] mx-auto has_fade_anim relative"
           >
-            <CarouselContent className="gap-[14px]">
+            <CarouselContent className="gap-[14px] has_fade_anim">
               {items &&
                 items.length &&
                 items.map((item, i) => (
