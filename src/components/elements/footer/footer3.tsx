@@ -22,7 +22,7 @@ const Footer3 = ({ footerNav }: Props) => {
     <footer className="bg-[#121B21] pt-[56px] xl:pt-[96px] 2xl:pt-[146px] pb-[51px] xl:pb-[91px] 2xl:pb-[141px]">
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-x-[80px] gap-y-[30px] text-center md:text-start">
-          <div>
+          <div className="flex md:block justify-center items-center flex-col">
             <Image
               src={"/assets/imgs/logo/logo-light.png"}
               alt="Logo"
