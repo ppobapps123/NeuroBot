@@ -58,8 +58,9 @@ const ImageGeneratorHero = ({ hero }: Props) => {
         >
           <h1
             dangerouslySetInnerHTML={markdownify(title)}
-            className="text-[34px] md:text-[50px] xl:text-[70px] 2xl:text-[110px] max-w-[410px] md:max-w-[610px] xl:max-w-[810px] 2xl:max-w-[1300px] mx-auto !font-bold !leading-[1.09] [&>span]:bg-gradient-160 [&>span]:from-[#C581FB] [&>span]:to-[#24DC87] [&>span]:to-[71.11%] [&>span]:bg-clip-text [&>span]:text-transparent [&>img]:inline-block [&>img]:-me-[20px] xl:[&>img]:-me-[30px] 2xl:[&>img]:-me-[50px] [&>img]:w-[74px] md:[&>img]:w-[94px] xl:[&>img]:w-[104px] 2xl:[&>img]:w-[174px] [&>img]:rtl_y has_fade_anim"
+            className="text-[34px] md:text-[50px] xl:text-[70px] 2xl:text-[110px] max-w-[410px] md:max-w-[610px] xl:max-w-[810px] 2xl:max-w-[1300px] mx-auto !font-bold !leading-[1.09] [&>img]:inline-block [&>img]:-me-[20px] xl:[&>img]:-me-[30px] 2xl:[&>img]:-me-[50px] [&>img]:w-[74px] md:[&>img]:w-[94px] xl:[&>img]:w-[104px] 2xl:[&>img]:w-[174px] [&>img]:rtl_y has_fade_anim"
           />
+          
           <p
             className="mt-[20px] text-[20px] 2xl:text-[24px] leading-[1.33] max-w-[530px] 2xl:max-w-[760px] mx-auto has_fade_anim"
             data-delay="0.30"

@@ -79,6 +79,11 @@ const config = {
         PPFragment: ["PPFragment"],
       },
       keyframes: {
+        'gradient-text': {
+          '0%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -100,6 +105,7 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "wc-y-anim": "wc-y-anim 3s ease-in-out infinite alternate",
+        'gradient-text': 'gradient-text 3s ease infinite',
       },
       transformOrigin: {
         "origin-1": "50% 0",
