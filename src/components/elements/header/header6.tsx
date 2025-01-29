@@ -21,6 +21,7 @@ import Offcanvas1 from "../offcanvas/offcanvas1";
 import Signin from "../signin";
 import Signup from "../signup";
 import Search from "../search";
+import Image from "next/image";
 
 type Props = {
   headerNav: MenuDataType;
@@ -68,7 +69,12 @@ const Header6 = ({ headerNav, signUpBtnClassName }: Props) => {
         <div className="px-10">
           <div className="grid grid-cols-9 xl:grid-cols-4 gap-1 xl:gap-5 relative h-[90px] items-center">
             <div className="col-span-3 md:col-span-4 xl:col-span-1">
-              <Logo light />
+              <Image
+                src="/assets/imgs/logo/logo-light.png"
+                alt="logo"
+                width={180}
+                height={100}
+              />
             </div>
             <div className="col-span-2 hidden xl:flex justify-center">
               <Menu1 headerNav={headerNav} />
