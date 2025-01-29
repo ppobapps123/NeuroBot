@@ -18,6 +18,7 @@ import ImageGeneratorTestimonial from "@/components/elements/testimonial/image-g
 import Counter2 from "@/components/elements/counter/counter2";
 import CounterWrapper from "@/components/elements/counter/counterWrapper";
 import MainFAQ from "@/components/elements/faq/main-faq";
+import PNLSlider from "@/components/elements/PNL/pnl-slider";
 
 export default function Page() {
   const hero = getMainPage("/heros/image-generator-hero.mdx");
@@ -53,6 +54,23 @@ export default function Page() {
       <ImageGeneratorFeature feature={feature} />
       <ImageGeneratorService service={service} services={services} />
       <ImageGeneratorIntegration integration={integration} />
+      <PNLSlider
+        pnl={{
+          data: {
+            title: "PnL Users",
+            details:
+              "Optimize your crypto strategy – we’ll help you achieve maximum profit!",
+            items: [
+              { image: "/assets/imgs/PNL/pnl-1.png" },
+              { image: "/assets/imgs/PNL/pnl-2.png" },
+              { image: "/assets/imgs/PNL/pnl-3.png" },
+              { image: "/assets/imgs/PNL/pnl-4.png" },
+              { image: "/assets/imgs/PNL/pnl-5.png" },
+              { image: "/assets/imgs/PNL/pnl-6.png" },
+            ],
+          },
+        }}
+      />
       <ImageGeneratorTestimonial testimonial={testimonial} />
       <MainFAQ faq={faq} />
       <CTA3
